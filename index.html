@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Summit Springs</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <nav>
+            <i class="nav-icon-left fas fa-mountain fa-2x"></i>
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-button">
+                <i class="fas fa-bars fa-2x"></i>
+            </label>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#events">events</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li>
+                    <label for="check" class="close-button">
+                        <i class="fas fa-times fa-2x"></i>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+
+    <section id="home" class="home">
+        <h3>Experience</h3>
+        <h1>Summit Springs</h1>
+        <a href="#about" class="home-button">Explore The Club</a>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Join the club! We are a passionate and an enthusiastic club all about having fun on and off the mountain.</p>
+        <p>Summit Springs offers trips to local resorts for skiers and snowboarders who want the fun, companionship and convenience of group travel. We also provide vacation trips to destination resorts around the world. As a group, we can bargain with travel agents to keep costs reasonable.</p>
+        <p>Located in Seattle, Summit Springs is run by an executive team of passionate snow sport members that come together and organize trips and events throughout the year.</p>
+    </section>
+   
+    <!-- EVENTS -->
+
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="events-container">
+            <div class="events-box">
+                <img class= "photo" src="./resources/images/summit-at-snoqualmie.jpg" alt="">
+                <h4>Summit at Snoqualmie</h4>
+                <p>November 12<sup>th</sup>, 2021</p>
+                <p>Friday 09:30 PST</p>
+                <p>1001 WA-906</p>
+                <p>Snoqualmie Pass, WA 98068</p>
+                <a href="#contact" class="events-button">Join</a>
+            </div>
+            <div class="events-box">
+                <img src="./resources/images/summit-stevens-pass.jpg" alt="">
+                <h4>Stevens Pass</h4>
+                <p>December 4<sup>th</sup>, 2021</p>
+                <p>Saturday 09:00 PST</p>
+                <p>93001 US Hwy 2</p>
+                <p>Skykomish, WA 98288</p>
+                <a href="#contact" class="events-button">Join</a>
+            </div>
+            <div class="events-box">
+                <img src="./resources/images/aspen-snowmass.jpg" alt="">
+                <h4>Aspen Snowmass</h4>
+                <p>December 17<sup>th</sup>, 2021</p>
+                <p>Friday 09:00 MST</p>
+                <p>120 Lower, Carriage Way</p>
+                <p>Snowmass Village, CO 81615</p>
+                <a href="#contact" class="events-button">Join</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <figure class="gallery-img-1">
+                <img src="./resources/images/snowboarding-1.jpg" class="gallery-img" alt="">
+            </figure>
+            <figure class="gallery-img-2">
+                <img src="./resources/images/skiing-2.jpg" class="gallery-img" alt="">
+            </figure>
+            <figure class="gallery-img-3">
+                <img src="./resources/images/snow-tubing-3.jpg" class="gallery-img" alt="">
+            </figure>
+            <figure class="gallery-img-4">
+                <img src="./resources/images/sledding-4.jpg" class="gallery-img" alt="">
+            </figure>
+            <figure class="gallery-img-5">
+                <img src="./resources/images/rail-trick-5.jpg" class="gallery-img" alt="">
+            </figure>
+            <figure class="gallery-img-6">
+                <img src="./resources/images/snowshoeing-6.jpg" class="gallery-img" alt="">
+            </figure>
+            <figure class="gallery-img-7">
+                <img src="./resources/images/lift-7.jpg" class="gallery-img" alt="">
+            </figure>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-box">
+                <i class="contact-icon fas fa-map-marker-alt fa-2x"></i>
+                <p>3947 Ashford Dr. Seattle, WA 98105</p>
+            </div>
+            <div class="contact-box">
+                <i class="contact-icon fas fa-phone fa-2x"></i>
+                <p>253-501-9053</p>
+            </div>
+            <div class="contact-box">
+                <i class="contact-icon far fa-envelope fa-2x"></i>
+                <p>info@summitsprings.com</p>
+            </div>
+        </div>
+        <div class="newsletter-container">
+            <form action="#">
+                <h5>Want more? Subscribe to our weekly newsletter!</h5>
+                <div class="newsletter-box">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="newsletter-text">
+                    <button type="button" name="button" class="newsletter-button">Subscribe</button>
+                </div>
+            </form>
+        </div>
+        <div class="follow-container">
+            <h5>Give us a follow!</h5>
+            <a href="https://www.facebook.com" target="_blank" class="follow-box">
+                <i class="follow-icon fab fa-facebook-f fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank"  class="follow-box">
+                <i class="follow-icon fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank"  class="follow-box">
+                <i class="follow-icon fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank"  class="follow-box">
+                <i class="follow-icon fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>&copy;2021 Jackie Yu. Project from Codecademy. Photos from Unsplash. Icons from Font Awesome. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
