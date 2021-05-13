@@ -15,7 +15,7 @@ body {
 }
 
 section {
-    padding: 9rem 15%;
+    padding: 9rem 15% 0 15%;
 }
 
 /* FONTS */
@@ -217,25 +217,23 @@ header {
 
 /* ABOUT */
 
-/* .about {
-    padding: 0 15% 7rem 15%;
+.about {
+    padding-bottom: 9rem;
 }
 
 .about p {
-    padding-bottom: 2rem;
     line-height: 1.5rem;
-} */
+}
 
 /* EVENTS */
 
-/* .events {
-    padding: 0 15% 8rem 15%;
+.events {
+    padding-bottom: 8rem;
     background-color: rgb(150, 64, 54);
-    margin-bottom: 1px;
 }
 
 .events h2 {
-    color: #ffffff;
+    color: #fff;
 }
 
 .events-container {
@@ -254,21 +252,24 @@ header {
     overflow: hidden;
 }
 
+.events-photo {
+    height: 240px;
+}
+
 .events-box img {
-    width: 400px;
-    height: 250px;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .events-box h4 {
     font-size: 1.25rem;
     line-height: 2rem;
-    padding: 1rem 0;
+    padding: 1.75rem 0 .5rem 0;
 }
 
 .events-box p {
-    padding-bottom: .5rem;
+    padding-bottom: .75rem;
 }
 
 .events-button {
@@ -279,7 +280,7 @@ header {
     height: 2.5rem;
     width: 7.5rem;
     border-radius: 1rem;
-    margin: 1rem;
+    margin: 1rem 0 1.75rem 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -289,22 +290,7 @@ header {
 .events-button:hover {
     background-color: rgba(232, 144, 5, 0.8);
     transition: .5s linear;
-} */
-
-/* EVENTS - MOBILE */
-
-/* @media only screen and (max-width: 540px) {
-
-    .events-box {
-        width: 300px;
-    }
-    
-    .events-box img {
-        width: 300px;
-        height: 185px;
-    }
-
-} */
+}
 
 /* GALLERY */
 
