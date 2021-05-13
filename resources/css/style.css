@@ -1,4 +1,4 @@
-/* UNIVERSIAL STYLES */
+/* UNIVERSAL STYLES */
 
 * {
     padding: 0;
@@ -9,9 +9,13 @@
 
 html,
 body {
-    height: 100%;
     font-family: "Overpass", sans-serif;
     font-size: 16px;
+    height: 100%;
+}
+
+section {
+    padding: 9rem 15%;
 }
 
 /* FONTS */
@@ -20,7 +24,6 @@ h1 {
     font-family: "Permanent Marker", sans-serif;
     color: rgb(47, 142, 153);
     font-size: 7rem;
-    padding: 0 2rem;
     letter-spacing: .25rem;
     line-height: 8rem;
     text-align: center;
@@ -29,7 +32,7 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    padding: 9rem 0 2rem 0;
+    padding-bottom: 2rem;
 }
 
 h3 {
@@ -38,13 +41,18 @@ h3 {
     text-transform: uppercase;
 }
 
+p {
+    font-size: 16px;
+}
+
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* FONTS - MOBILE */
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
     
     h1 {
         font-size: 5rem;
@@ -68,10 +76,10 @@ header {
     width: 100%;
     margin-top: 2rem;
     padding: 0 5%;
-    z-index: 1;
+    z-index: 10;
 }
 
-nav {
+.navigation {
     background-color: rgba(0, 0, 0, 0.6);
     height: 5rem;
     border-radius: 1rem;
@@ -80,80 +88,80 @@ nav {
     align-items: center;
 }
 
-.nav-icon-left {
-    color: #ffffff;
+.nav-icon {
+    color: #fff;
     padding-left: 1.5rem;
 }
 
-.menu-button {
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    padding-left: 1.5rem;
+.navigation ul li {
+    padding-right: 1.5rem;
     display: inline-block;
 }
 
-nav ul a {
-    color: #ffffff;
+.navigation ul li a {
+    color: #fff;
     text-transform: capitalize;
+    transition: all .5s;
 }
 
-nav ul a:hover {
+.navigation ul li a:hover {
     color: rgb(232, 144, 5);
 }
 
+.menu-button,
 .close-button {
     display: none;
 }
 
 /* HEADER - MOBILE */
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
 
-    .menu-button {
-        display: block;
-        color: #ffffff;
-        padding-right: 1.5rem;
-        cursor: pointer;
-    }
-
-    #check:checked ~ ul {
-        top: 0;
-    }
-
-    nav ul {
+    .navigation ul {
         position: fixed;
-        background-color: rgb(64,64,64);
-        padding-top: 7rem;
+        background-color: rgb(232, 144, 5);
         height: 100%;
         width: 100%;
-        top: -100%;
-        right: 0;
-        text-align: center;
-        transition: all .5s;
+        top: 0;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 15;
+        transition: all .75s;
     }
 
-    nav ul li {
-        display: block;
-        margin: 4rem 0;
+    .navigation ul.active {
+        right: 0;
+    }
+
+    .navigation ul li {
+        line-height: 80px;
         padding: 0;
     }
 
-    .close-button {
+    .navigation ul li a:hover {
+        color: #000;
+    }
+
+    .menu-button {
         display: block;
-        color: rgb(255, 255, 255);
-        position: absolute;
-        top: 4rem;
-        right: 4rem;
+        color: #fff;
+        padding-right: 1.5rem;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .menu-button.active {
+        display: none;
+    }
+
+    .close-button.active {
+        display: block;
+        color: #fff;
+        padding-right: 1.5rem;
+        z-index: 25;
         cursor: pointer;
     }
 
@@ -166,17 +174,18 @@ nav ul a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     height: 100%;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 9rem;
 }
 
 .home-button {
     background-color: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
+    color: #fff;
     font-size: 1.25rem;
     height: 4rem;
     width: 14rem;
@@ -187,17 +196,16 @@ nav ul a:hover {
     align-items: center;
     text-transform: capitalize;
     cursor: pointer;
-
 }
 
 .home-button:hover {
     background-color: rgba(232, 144, 5, 0.8);
-    transition: .5s linear;
+    transition: all .5s linear;
 }
 
 /* BANNER - MOBILE */
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
     
     .home-button {
         font-size: 1rem;
@@ -209,20 +217,21 @@ nav ul a:hover {
 
 /* ABOUT */
 
-.about {
+/* .about {
     padding: 0 15% 7rem 15%;
 }
 
 .about p {
     padding-bottom: 2rem;
     line-height: 1.5rem;
-}
+} */
 
 /* EVENTS */
 
-.events {
+/* .events {
     padding: 0 15% 8rem 15%;
     background-color: rgb(150, 64, 54);
+    margin-bottom: 1px;
 }
 
 .events h2 {
@@ -242,6 +251,7 @@ nav ul a:hover {
     width: 400px;
     margin: 0 .5rem 1rem .5rem;
     border-radius: 1rem;
+    overflow: hidden;
 }
 
 .events-box img {
@@ -279,11 +289,11 @@ nav ul a:hover {
 .events-button:hover {
     background-color: rgba(232, 144, 5, 0.8);
     transition: .5s linear;
-}
+} */
 
 /* EVENTS - MOBILE */
 
-@media only screen and (max-width: 540px) {
+/* @media only screen and (max-width: 540px) {
 
     .events-box {
         width: 300px;
@@ -294,11 +304,11 @@ nav ul a:hover {
         height: 185px;
     }
 
-}
+} */
 
 /* GALLERY */
 
-.gallery {
+/* .gallery {
     padding: 0 15% 9rem 15%;
 }
 
@@ -363,22 +373,22 @@ nav ul a:hover {
     grid-column-end: 7;
     grid-row-start: 5;
     grid-row-end: 7;
-}
+} */
 
 /* GALLERY - MOBILE */
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
 
     .gallery-grid {
         display: flex;
         flex-direction: column;
     }
 
-}
+} */
 
 /* CONTACT */
 
-.contact {
+/* .contact {
     padding: 0 15% 9rem 15%;
     background-color: rgb(47, 142, 153);
 }
@@ -438,7 +448,7 @@ nav ul a:hover {
 
 .newsletter-text {
     width: 0;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .newsletter-button {
@@ -484,11 +494,11 @@ nav ul a:hover {
     color: rgb(232, 144, 5);
     transform: scale(1.2);
     transition: 0.5s linear;
-}
+} */
 
 /* CONTACT - MOBILE */
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
 
     .newsletter-box {
         width: 10rem;
@@ -503,11 +513,11 @@ nav ul a:hover {
         height: 185px;
     }
 
-}
+} */
 
 /* FOOTER */
 
-footer {
+/* footer {
     background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     padding: 1.5rem;
@@ -516,4 +526,4 @@ footer {
 
 footer p {
     font-size: 1rem;
-}
+} */
