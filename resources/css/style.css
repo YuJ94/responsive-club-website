@@ -442,6 +442,7 @@ header {
     .gallery-grid {
         display: flex;
         flex-direction: column;
+        grid-gap: 0;
     }
 
     .gallery-img {
@@ -459,10 +460,15 @@ header {
     .mobile-img {
         display: block;
     }
-    /* .gallery-img-3,
-    .gallery-img-5 {
-        display: none;
-    } */
+
+    .gallery-img-1,
+    .gallery-img-2,
+    .gallery-img-3,
+    .gallery-img-4,
+    .gallery-img-5,
+    .gallery-img-6 {
+        margin-bottom: 1rem;
+    }
 
 }
 
