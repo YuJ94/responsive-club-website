@@ -61,8 +61,8 @@ a {
 @media only screen and (max-width: 768px) {
     
     h1 {
-        font-size: 5rem;
-        line-height: 6rem;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
     }
 
     h2 {
@@ -587,7 +587,7 @@ header {
     }
 
     .newsletter-text {
-        width: 20rem;
+        width: 10rem;
         padding: 0 1rem;
     }
     
@@ -613,4 +613,9 @@ footer {
 
 footer p {
     font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
 }
