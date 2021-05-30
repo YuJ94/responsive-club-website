@@ -47,6 +47,10 @@ h3 {
     text-transform: uppercase;
 }
 
+h5 {
+    font-size: 1.25rem;
+}
+
 p {
     font-size: 16px;
 }
@@ -71,6 +75,10 @@ a {
     
     h3 {
         font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1rem;
     }
 
 }
@@ -511,7 +519,6 @@ header {
 }
 
 .newsletter-container h5 {
-    font-size: 1rem;
     padding: 2rem 0;
 }
 
@@ -552,8 +559,7 @@ header {
     text-align: center;
 }
 
-.follow-container h5 {
-    font-size: 1rem;
+.follow-container h5 {;
     padding: 2rem 0 1.5rem 0;
 }
 
@@ -590,7 +596,7 @@ header {
         width: 10rem;
         padding: 0 1rem;
     }
-    
+
 }
 
 @media only screen and (max-width: 540px) {
