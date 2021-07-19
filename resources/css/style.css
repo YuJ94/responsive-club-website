@@ -540,6 +540,7 @@ header {
 }
 
 .newsletter-button {
+    font-family: inherit;
     background-color: var(--primary-accent-color);
     font-size: 1rem;
     padding: 0 1rem;
