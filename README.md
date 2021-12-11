@@ -5,9 +5,9 @@ A snowsports club website utilizing a scrolling parallax effect in CSS and JavaS
 ![preview of landing page](./resources/images/summit-springs.jpg)
 
 ## Visit
-Click [here](https://yuj94.github.io/responsive-club-website/) to visit the website.
+To view this website live, please visit [here](https://yuj94.github.io/responsive-club-website/).
 
-## Technologies
+## Technologies Used
 Project was built with:
 - HTML
 - CSS
